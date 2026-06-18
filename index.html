@@ -246,8 +246,8 @@
   <h1 id="Nanjing-Metro-–可视化网站"><a href="#Nanjing-Metro-–可视化网站" class="headerlink" title="Nanjing-Metro –可视化网站"></a>Nanjing-Metro –<a href="https://unqualified-developers.github.io/Nanjing-Metro/">可视化网站</a></h1><blockquote>
 <p>Nanjing-Metro <a target="_blank" rel="noopener" href="https://github.com/Unqualified-Developers/Nanjing-Metro">仓库地址</a></p>
 </blockquote>
-<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>自动获取南京地铁官方微博的每日客流数据，并进行可视化分析的Python项目。</p>
-<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">├── config.json          # 线路配置数据</span><br><span class="line">├── metro_data.py        # 数据处理模块</span><br><span class="line">├── main.py              # 主程序可视化模块</span><br><span class="line">├── generate_report.py   # 生成报告模块</span><br><span class="line">├── get_cookie.py        # 手动更新微博cookie</span><br><span class="line">└── requirements.txt     # 依赖包列表</span><br></pre></td></tr></table></figure>
+<h1 id="Nanjing-Metro"><a href="#Nanjing-Metro" class="headerlink" title="Nanjing-Metro"></a>Nanjing-Metro</h1><h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>自动获取南京地铁官方微博的每日客流数据，并进行可视化分析的Python项目。</p>
+<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">├──config.json           # 线路配置数据</span><br><span class="line">├──metro_data.py         # 数据处理模块</span><br><span class="line">├──main.py               # 主程序可视化模块</span><br><span class="line">├──generate_report.py    # 生成报告模块</span><br><span class="line">├──get_cookie.py         # 手动更新微博cookie</span><br><span class="line">├──send_email.py         # QQ邮箱发送Cookie过期提示</span><br><span class="line">├──setup_fonts.py        # 设置中文字体</span><br><span class="line">├──.gitignore            # 忽略文件</span><br><span class="line">└──requirements.txt      # 依赖包列表</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="功能特点"><a href="#功能特点" class="headerlink" title="功能特点"></a>功能特点</h2><ul>
 <li>自动爬取微博客流数据</li>
@@ -257,19 +257,79 @@
 </ul>
 <h2 id="安装运行"><a href="#安装运行" class="headerlink" title="安装运行"></a>安装运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">pip install -r requirements.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行程序</span></span><br><span class="line">python main.py</span><br></pre></td></tr></table></figure>
 
-<h2 id="输出图表"><a href="#输出图表" class="headerlink" title="输出图表"></a>输出图表</h2><ol>
+<p>输出图表</p>
+<ol>
 <li>昨日客流线路占比图（饼图+条形图）</li>
 <li>最近7天客流强度变化趋势图</li>
 <li>最近7天客流占比变化趋势图</li>
 <li>综合分析仪表板</li>
 <li>最近7天客流数据.csv</li>
 </ol>
-<h2 id="支持的线路"><a href="#支持的线路" class="headerlink" title="支持的线路"></a>支持的线路</h2><p>1号线、2号线、3号线、4号线、5号线、7号线、10号线、S1号线、S3号线、S6号线、S7号线、S8号线、S9号线</p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>数据来自微博，仅供参考</li>
-<li>需保持网络连接</li>
-<li>可能需要更新微博Cookie</li>
-</ul>
+<p>支持的线路</p>
+<p>1号线、2号线、3号线、4号线、5号线、7号线、10号线、S1号线、S3号线、S6号线、S7号线、S8号线、S9号线</p>
+<p>注意事项</p>
+<p>· 数据来自微博，仅供参考<br>· 需保持网络连接<br>· 可能需要更新微博Cookie</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Lottery"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2026/01/09/Lottery/"
+    >Lottery</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2026/01/09/Lottery/" class="article-date">
+  <time datetime="2026-01-09T10:32:18.000Z" itemprop="datePublished">2026-01-09</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <blockquote>
+<p>Lottery <a target="_blank" rel="noopener" href="https://github.com/Unqualified-Developers/Lottery">仓库地址</a></p>
+</blockquote>
+<h1 id="Lottery"><a href="#Lottery" class="headerlink" title="Lottery"></a>Lottery</h1><p align="center">
+  <a target="_blank" rel="noopener" href="https://github.com/Unqualified-Developers/Lottery/releases"><img src="https://img.shields.io/github/release/Unqualified-Developers/Lottery" alt="Release version"></a>
+  <a><img src="https://img.shields.io/badge/License-Apache%202.0-blue?color=#4ec820" alt="Apache%202.0"/></a>
+</p>
+
+<p><strong>A lottery application which is small but strong.</strong></p>
+<p>It can generate random numbers in the range you entered. You can set the <code>quantity</code> and even the numbers you want to <code>ignore</code>. If you want to <code>ignore more than one number</code>, use a <code>whitespace</code> (<code> </code>) between them.</p>
+<h2 id="Requirement"><a href="#Requirement" class="headerlink" title="Requirement"></a>Requirement</h2><p><strong>A Windows equipment with <code>.NET Framework 4.8</code> or higher.</strong></p>
+<p>However, sometimes you can still use it <code>without</code> the required environment due to some special things.</p>
+<h2 id="Build-Run"><a href="#Build-Run" class="headerlink" title="Build &amp; Run"></a>Build &amp; Run</h2><p><strong>We advise you to use <code>Visual Studio</code> to build the project.</strong></p>
+<p>If you only want to <code>use</code> it, please go to the <a target="_blank" rel="noopener" href="https://github.com/Unqualified-Developers/Lottery/releases">Release Page</a> .</p>
  
       <!-- reward -->
       
